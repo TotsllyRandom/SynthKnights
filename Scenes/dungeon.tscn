@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bo666o33iy8v0"]
+
+[ext_resource type="Script" uid="uid://bakl3hwmkx50e" path="res://Scripts/dungeon.gd" id="1_oavya"]
+
+[node name="Dungeon" type="Node3D" unique_id=1328486359]
+script = ExtResource("1_oavya")
+
+[node name="Marker3D" type="Marker3D" parent="." unique_id=776297919]
+transform = Transform3D(0.70710677, -0.35355338, 0.6123724, 0, 0.8660254, 0.5, -0.70710677, -0.35355338, 0.6123724, 8, 7, 8)
+
+[node name="Camera3D" type="Camera3D" parent="Marker3D" unique_id=1634884532]
+current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Marker3D" unique_id=1886366751]
+light_energy = 2.0
+shadow_enabled = true
