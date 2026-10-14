@@ -1,16 +1,20 @@
 [gd_scene format=3 uid="uid://bo666o33iy8v0"]
 
-[ext_resource type="Script" uid="uid://bakl3hwmkx50e" path="res://Scripts/dungeon.gd" id="1_oavya"]
+[ext_resource type="Script" uid="uid://bc86nw50w8xv4" path="res://Scripts/dungeon.gd" id="1_oavya"]
+[ext_resource type="PackedScene" uid="uid://mpu4r0vb0drw" path="res://scenes/Player.tscn" id="2_dakn4"]
 
 [node name="Dungeon" type="Node3D" unique_id=1328486359]
 script = ExtResource("1_oavya")
 
-[node name="Marker3D" type="Marker3D" parent="." unique_id=776297919]
-transform = Transform3D(0.70710677, -0.35355338, 0.6123724, 0, 0.8660254, 0.5, -0.70710677, -0.35355338, 0.6123724, 8, 7, 8)
+[node name="Player" parent="." unique_id=201644643 instance=ExtResource("2_dakn4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.237545, 0)
 
-[node name="Camera3D" type="Camera3D" parent="Marker3D" unique_id=1634884532]
+[node name="Marker3D" type="Marker3D" parent="Player" unique_id=776297919]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.8660254, 0.49999997, 0, -0.5, 0.8660253, 0, 7, 11.317417)
+
+[node name="Camera3D" type="Camera3D" parent="Player/Marker3D" unique_id=1634884532]
 current = true
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Marker3D" unique_id=1886366751]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Player/Marker3D" unique_id=1886366751]
 light_energy = 2.0
 shadow_enabled = true
