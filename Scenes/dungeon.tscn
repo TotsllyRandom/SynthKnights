@@ -18,3 +18,5 @@ current = true
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Player/Marker3D" unique_id=1886366751]
 light_energy = 2.0
 shadow_enabled = true
+
+[node name="Ground" type="Node3D" parent="." unique_id=183039139]

@@ -3,3 +3,7 @@ res://Scripts/dungeon.gd
 res://Scenes/tile.tscn
 res://Scripts/tile.gd
 res://Scenes/Player.tscn
+res://Scenes/wall.tscn
+res://Scenes/wall.gd
+res://assets/resources/wall.gdshader
+res://scripts/wall.gd
